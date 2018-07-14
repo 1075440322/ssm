@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.ssm.dao.UserDao">
+	
+	<select id="findById" parameterType="int" resultType="user">
+		select * from user where id=#{value}
+	</select>
+	<select id="findExist" resultType="user">
+		select * from user where username=#{0} and password=#{1}
+	</select>
+	<select id="findAll" resultType="user">
+		select * from user 
+	</select>
+	
+</mapper>
