@@ -1,4 +1,4 @@
-﻿package net.ssm.test;
+package net.ssm.test;
 
 import java.util.List;
 
@@ -65,6 +65,7 @@ public class UserServiceTest {
 	@Test
 	public void findAllPage() {
 		//我爱cold!!!!!
+        //我爱莉莉丝!!!!!!!!
 		Pager pager = new Pager();
 		pager.setPageSize(2);
 		pager.setPageNo(2);
